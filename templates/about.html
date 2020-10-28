@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+
+{% block title %} This is the about page{% endblock %}
+  	
+
+{% block content %}
+
+	<div class="container">
+    	<h1>About me...</h1>
+      <ul>
+      <p>
+        {% for name in names%}
+          {% if name == 'Berta' %}
+            <li>Holi Berx!</li>
+          {% else %}
+            <li>{{name}}</li>
+          {% endif %}
+        {%endfor%}
+      </ul>
+    </p>
+    </div>	
+
+  {% endblock %}
